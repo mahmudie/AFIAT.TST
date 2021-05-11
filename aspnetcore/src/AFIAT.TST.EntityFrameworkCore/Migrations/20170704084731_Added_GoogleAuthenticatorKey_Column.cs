@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MyCompanyName.AbpZeroTemplate.Migrations
+namespace AFIAT.TST.Migrations
 {
     public partial class Added_GoogleAuthenticatorKey_Column : Migration
     {

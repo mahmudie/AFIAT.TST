@@ -3,17 +3,17 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using MyCompanyName.AbpZeroTemplate.EntityFrameworkCore;
+using AFIAT.TST.EntityFrameworkCore;
 using Abp.Authorization;
 using Abp.BackgroundJobs;
 using Abp.Notifications;
-using MyCompanyName.AbpZeroTemplate.Chat;
-using MyCompanyName.AbpZeroTemplate.Friendships;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments;
+using AFIAT.TST.Chat;
+using AFIAT.TST.Friendships;
+using AFIAT.TST.MultiTenancy.Payments;
 
-namespace MyCompanyName.AbpZeroTemplate.Migrations
+namespace AFIAT.TST.Migrations
 {
-    [DbContext(typeof(AbpZeroTemplateDbContext))]
+    [DbContext(typeof(TSTDbContext))]
     [Migration("20170704084731_Added_GoogleAuthenticatorKey_Column")]
     partial class Added_GoogleAuthenticatorKey_Column
     {

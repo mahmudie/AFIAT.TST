@@ -1257,8 +1257,7 @@ namespace AFIAT.TST.Migrations
                         .HasColumnType("nvarchar(32)")
                         .HasMaxLength(32);
 
-                    b.Property<string>("
-                        ")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(128)")
                         .HasMaxLength(128);

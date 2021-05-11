@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AFIAT.TST.Migrations
+namespace MyCompanyName.AbpZeroTemplate.Migrations
 {
     public partial class TypeChange_SharedMessageId_String_Guid : Migration
     {
