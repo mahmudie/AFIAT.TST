@@ -1,0 +1,10 @@
+﻿@using AFIAT.TST.Web.Areas.Area.Models.Layout
+@using AFIAT.TST.Web.Areas.Area.Views.Shared.Components.AreaLogo
+@model HeaderViewModel
+@{
+    Layout = null;
+    var theme = await GetTheme();
+}
+<a href="@Url.Action("Index", "Home", new {area = string.Empty})" class="brand-logo">
+    @await Component.InvokeAsync(typeof(AreaLogoViewComponent), new {LogoSkin = "light"})
+</a>

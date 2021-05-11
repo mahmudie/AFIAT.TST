@@ -1,0 +1,5 @@
+﻿@using AFIAT.TST.UiCustomization.Dto
+@{
+    UiCustomizationSettingsDto theme = await GetTheme();
+    Layout = "~/Areas/Area/Views/Layout/" + theme.BaseSettings.Theme + "/_Layout.cshtml";
+}

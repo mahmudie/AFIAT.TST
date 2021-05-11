@@ -1,0 +1,10 @@
+﻿@using Abp.Runtime.Session
+@using AFIAT.TST.Web.Areas.Area.Models.Layout
+@using AFIAT.TST.Web.Areas.Area.Views.Shared.Components.AreaLogo
+@model HeaderViewModel
+@{
+    Layout = null;
+}
+<a href="@Url.Action("Index", "Home", new {area = string.Empty})" target="_blank" class="brand-logo">
+    @await Component.InvokeAsync(typeof(AreaLogoViewComponent), new {logoSkin = "dark-sm"})
+</a>
