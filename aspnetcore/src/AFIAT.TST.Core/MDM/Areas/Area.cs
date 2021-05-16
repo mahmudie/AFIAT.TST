@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFIAT.TST.MDM.Areas
+namespace AFIAT.TST.MDM
 {
     [Table("AbpAreas")]
-    public class Area : FullAuditedEntity, IHasCreationTime
+    public class Area : FullAuditedEntity
     {
         public const int MaxAreaLength = 120;
 
@@ -25,12 +25,7 @@ namespace AFIAT.TST.MDM.Areas
         [MaxLength(MaxAreaLength)]
         public virtual string AreaNamePashto { get; set; }
 
-        public override long? LastModifierUserId { get; set; }
-        public override DateTime CreationTime { get; set; }
-        public override DateTime? LastModificationTime { get; set; }
-        public Area()
-        {
-            CreationTime = DateTime.Now;
-        }
+        public List<Section> Sections { get; set; }
+
     }
 }
